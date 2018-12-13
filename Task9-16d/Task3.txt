@@ -1,0 +1,4 @@
+3. Вывести всех Employees у которых в NOTES упоминается BA
+
+SELECT * FROM Employees 
+where Notes LIKE '% BA %';
