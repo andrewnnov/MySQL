@@ -1,0 +1,7 @@
+2. Вывести все заказы из таблицы Orders с заказчиками из Франции или США
+
+SELECT o.OrderID, c.country FROM Orders o
+inner join Customers c on o.CustomerID=c.CustomerID
+where c.country = 'USA'
+or
+c.country = 'France';
