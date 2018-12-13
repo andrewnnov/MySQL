@@ -1,0 +1,6 @@
+4. Вывести имя категории из таблицы Categories и количество товаров из таблицы products  в ней.
+
+SELECT c.CategoryName, count(p.ProductName) FROM Categories c
+inner join Products p on
+c.CategoryID = p.CategoryID
+group by c.CategoryName ;
