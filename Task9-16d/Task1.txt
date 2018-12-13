@@ -1,0 +1,5 @@
+1. Вывести страну, кол-во supplier’ов в ней из таблицы suppliers
+
+
+SELECT country, count(*) FROM Suppliers
+group by country;
