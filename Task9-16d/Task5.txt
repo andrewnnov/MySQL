@@ -1,0 +1,6 @@
+ Вывести товары (products) с поставщиками (suppliers) из UK
+
+SELECT p.ProductID, p.ProductName, s.SupplierName, s.Country FROM Products p
+inner join Suppliers s
+on p.SupplierID = s.SupplierID
+where s.Country='UK';
