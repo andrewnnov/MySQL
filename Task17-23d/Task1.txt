@@ -1,0 +1,7 @@
+1. Вывести товары (products) с поставщиками (suppliers) из UK, отсортировать по ProductName в обратном порядке
+
+SELECT p.ProductName, s.SupplierName, s.Country
+FROM Products p Inner join Suppliers s
+on p.SupplierID=s.SupplierID
+where s.Country = 'UK'
+ORDER by p.ProductName DESC;
