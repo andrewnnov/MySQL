@@ -1,6 +1,7 @@
 1. Вывести товары (products) с поставщиками (suppliers) из UK, отсортировать по ProductName в обратном порядке
 
 1. Вывести товары
+2. Вывести товары.
 
 SELECT p.ProductName, s.SupplierName, s.Country
 FROM Products p Inner join Suppliers s
