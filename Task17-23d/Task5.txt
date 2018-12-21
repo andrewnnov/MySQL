@@ -1,0 +1,9 @@
+5. Vyvest vse Orders, sdelannye v noyabre 1996 goda - neskolko reshenij (ispolzovuya operatory sravneniya >= <=, ispolzuya between, ispolzuya LIKE)
+
+SELECT OrderID, OrderDate FROM Orders where OrderDate LIKE'%1996-11%';
+
+SELECT OrderID, OrderDate FROM Orders where OrderDate BETWEEN '1996-11-01' AND '1996-11-30';
+
+SELECT OrderID, OrderDate FROM Orders where OrderDate <='1996-11-30' AND OrderDate>='1996-11-01';
+
+

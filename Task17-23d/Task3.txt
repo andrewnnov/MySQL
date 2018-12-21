@@ -1,0 +1,3 @@
+3. vyvesti orders u kotoryx shipper = speedy express.
+
+SELECT o.OrderID, s.ShipperName FROM Shippers s inner join Orders o on o.ShipperID=s.ShipperID where s.ShipperName='Speedy Express';

@@ -1,0 +1,5 @@
+2. dlya predydushhego zaprosa vyvesti tolko rezultaty strochek 2...5 (vklyuchitelno), a drugie ne pokazyvat
+
+SELECT p.ProductName, s.SupplierName, s.Country FROM Products p Inner join Suppliers s on p.SupplierID=s.SupplierID where s.Country = 'UK'
+ORDER by p.ProductName DESC
+limit 2, 4;

@@ -1,0 +1,4 @@
+4. Vyvesti Shipper.name i to, skolko na etogo Shipper est zakazov
+
+SELECT s.ShipperName, COUNT(*) FROM Shippers s inner join Orders o on o.ShipperID=s.ShipperID
+group by s.ShipperName;
