@@ -1,0 +1,13 @@
+1. Vyvesti  postavshhikov (suppliers) iz UK, u kotoryx net tovarov, realizovat 2 resheniya : ispolzuya LEFT OUTER JOIN s usloviem na ravenstvo NULL v bloke WHERE, s WHERE NOT EXISTS
+
+1.select S.SupplierName, P.ProductName from Suppliers S
+LEFT JOIN Products P
+ON P.SupplierID=S.SupplierID
+where S.Country='UK'
+AND
+P.ProductName is null;
+
+
+2. Select SupplierName from Suppliers
+where not exists
+(select ProductName from Products where SupplierID=Suppliers.SupplierID and ProductName is not null);
